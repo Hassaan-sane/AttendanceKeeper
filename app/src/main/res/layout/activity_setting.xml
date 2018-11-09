@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_back"
+    tools:context=".Activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="20dp">
+
+        <ImageView
+            android:id="@+id/imageViewsetting"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:src="@android:drawable/ic_dialog_email"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:textColor="@color/WhiteColor"
+            android:text="Generate QR Code"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_share_QR"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="50dp"
+            android:textColor="@color/WhiteColor"
+            android:background="@drawable/button"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

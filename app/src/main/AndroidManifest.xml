@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hassaan.attendancekeeper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.SignUpUserActivity" />
+        <activity android:name=".Activity.SignUpOrgActivity" />
+        <activity android:name=".Activity.GenerateOrgCodeActivity" />
+        <activity
+            android:name=".Activity.NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.EmployeeActivity"
+            android:parentActivityName=".Activity.NavigationActivity" />
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:parentActivityName=".Activity.NavigationActivity" />
+        <activity
+            android:name=".Activity.ReportActivity"
+            android:parentActivityName=".Activity.NavigationActivity" />
+        <activity android:name=".Activity.EmployeeDetailsActivity"
+            android:parentActivityName=".Activity.EmployeeActivity"></activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.myapp.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath" />
+        </provider>
+    </application>
+
+</manifest>

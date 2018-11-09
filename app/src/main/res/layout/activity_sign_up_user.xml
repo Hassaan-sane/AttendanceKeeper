@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_back"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:paddingBottom="40dp"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:context=".Activity.SignUpUserActivity">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Name"
+                android:textAllCaps="true"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="DOB"
+                android:textAllCaps="true"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_DOB"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/edit_text"-->
+                <!--android:fontFamily="sans-serif-light"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:paddingLeft="15dp"-->
+                <!--android:paddingRight="15dp"-->
+                <!--android:textColor="@color/WhiteColor"-->
+                <!--android:textSize="15sp" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_Dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/button"
+                    android:textColor="@color/WhiteColor"
+                    android:text="Pick DOB" />
+
+                <TextView
+                    android:id="@+id/tv_DOB_picked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/WhiteColor"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Phone Number"
+                android:textAllCaps="true"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_email_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="E-mail"
+                android:textAllCaps="true"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_email_new"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_password_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Password"
+            android:textAllCaps="true"
+            android:textColor="@color/WhiteColor"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_password_new"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/WhiteColor"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_confirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Confirm Password"
+            android:textAllCaps="true"
+            android:textColor="@color/WhiteColor"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="sans-serif-light"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/WhiteColor"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_Signup_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Next"
+            android:textColor="@color/WhiteColor" />
+    </LinearLayout>
+    <!--</RelativeLayout>-->
+</LinearLayout></ScrollView>

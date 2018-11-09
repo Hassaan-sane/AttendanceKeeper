@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_back"
+    tools:context=".Activity.SignUpOrgActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_OrgName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Organization Name"
+                android:textAllCaps="true"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_OrgName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_OrgAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Address"
+                android:textAllCaps="true"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_OrgAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-light"
+                android:text="Country"
+                android:textAllCaps="true"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_country"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_NumberEmployees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Number of Employees"
+                android:textAllCaps="true"
+                android:textColor="@color/WhiteColor"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinnerEmployees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/WhiteColor"
+                android:padding="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btn_OrgNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="Generate Code"
+                android:padding="20dp"
+                android:textColor="@color/WhiteColor" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
